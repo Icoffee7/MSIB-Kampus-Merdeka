@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body background="bg.jpg">
+<form name="frmLatihan" method="POST" action="#">
+<font face="sans-serif" size="3" color="#fff">
+	<table border="0" align="center" cellpadding="15" width="40%">
+		<thead>
+			<tr bgcolor="#DAB88B">
+				<th colspan="2">Registrasi</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr bgcolor="#3A3845">
+				<td width="25%">Nama</td>
+				<td>
+					<input type="text" name="nama" value="" placeholder="Nama Lengkap" size="50" maxlength="30"/>
+				</td>
+			</tr>
+			<tr bgcolor="#3A3845">
+				<td>Email</td>
+				<td>
+					<input type="text" name="email" value="" placeholder="Masukan Email" size="50" maxlength="30"/>
+				</td>
+			</tr>
+			<tr bgcolor="#3A3845">
+				<td>Password</td>
+				<td>
+					<input type="password" name="password" value="" placeholder="Masukan Password" size="50"
+					minlength="10" required />
+				</td>
+			</tr>
+						<tr bgcolor="#3A3845">
+				<td>Ulangi Password</td>
+				<td>
+					<input type="password" name="password" value="" placeholder="Masukan Password" size="50"
+					minlength="10" required />
+				</td>
+			</tr>
+			<tr bgcolor="#3A3845">
+				<td>Jenis Kelamin</td>
+				<td>
+					<input type="radio" name="jeniskelamin" value="L"/ checked>Laki-Laki&nbsp;
+					<input type="radio" name="jeniskelamin" value="P"/>Perempuan
+				</td>
+			</tr>
+			<tr bgcolor="#3A3845">
+				<td valign="top">Hobby</td>
+				<td>
+					<input type="checkbox" name="hobby" value="olahraga">Olahraga<br/>
+					<input type="checkbox" name="hobby" value="musik">Mendengarkan Musik<br/>
+					<input type="checkbox" name="hobby" value="game">Main Game<br/>
+					<input type="checkbox" name="hobby" value="berenang">Berenang<br/>
+					<input type="checkbox" name="hobby" value="travelling">Travelling<br/>
+				</td>
+			</tr>
+			<tr bgcolor="#3A3845">
+				<td>Pendidikan</td>
+				<td>
+					<select name="pendidikan">
+						<option value="">-- Pilih Pendidikan --</option>
+						<option value="SMA">SMA</option>
+						<option value="D3">D3</option>
+						<option value="S1">S1</option>
+						<option value="S2">S2</option>
+						<option value="S3">S3</option>
+					</select>
+				</td>
+			</tr>
+			<tr bgcolor="#3A3845">
+				<td>Komentar</td>
+				<td>
+					<textarea name="komentar" cols="50" rows="5" placeholder="Masukan Komentar"></textarea>
+				</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr bgcolor="#DAB88B">
+				<th colspan="2">
+					<input type="submit" name="proses" value="kirim">&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="reset" name="unproses" value="batal">
+				</th>
+			</tr>
+		</tfoot>
+	</table>
+</font>
+</form>
+<style>
+	select{
+		width: 370px;
+	}
+</style>
+</body>
+</html>

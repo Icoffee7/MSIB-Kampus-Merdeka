@@ -1,0 +1,133 @@
+/* Style */
+:root{
+    --Background: whitesmoke;
+    --first-color: #2C3639;
+    --main-color: #395B64;
+    --second-color: #A5C9CA;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: var(--first-color);
+    overflow: hidden;
+}
+/* Navbar */
+.header{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    top: 0;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    background-color: var(--main-color);
+}
+.header .logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 5px;
+    padding: 5px;
+}
+.header .navbar{
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+}
+.header .navbar a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 10px;
+    font-family: sans-serif;
+}
+.header .navbar a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+/* Main Section */
+.container{
+    width: 246px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    left: 10%;
+}
+.container .text{
+    position: relative;
+    color: #FECD70;
+    font-size: 16px;
+    font-weight: 600;
+    left: 17%;
+}
+.container .text.first-text{
+    color: #FFF;
+}
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--first-color);
+    border-left: 2px solid #4070F4;
+    animation: animate 4s steps(12) infinite;
+}
+p{
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    text-align:left;
+    background-color: #000;
+    gap: 3rem;
+}
+img{
+    width: 500px;
+    height: 585px;
+    float: right;
+    gap: 3rem;
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    border-radius: 20px;
+}
+.btn{
+    color: #000;
+    border: 1px solid #fff;
+    background-color: #E0D98C;
+    padding: 5px;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 90%;
+    left: 45%;
+}
+.btn:hover{
+    background-color:#395B64;
+    text-decoration: underline;
+    color: #fff;
+}
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
