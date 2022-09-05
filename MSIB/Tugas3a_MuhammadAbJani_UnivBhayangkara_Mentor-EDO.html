@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Latihan 3A</title>
+</head>
+<body bgcolor="#04293A">
+<form name="frmLatihan" method="POST" action="#">
+	<font face="sans-serif" color="whitesmoke" size="3">
+		<table border="0" align="center" cellpadding="15" width="20%">
+			<thead>
+				<tr bgcolor="#DAB88B">
+					<th colspan="2">Form Register Produk</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr bgcolor="#3A3845">
+					<td width="25%">Nama Produk</td>
+					<td>
+						<input type="text" name="namaProduk" size="30" maxlength="30">
+					</td>
+				</tr>
+				<tr bgcolor="#3A3845">
+					<td>Jenis Produk</td>
+					<td>
+						<select name="produk">
+							<option value="">-- Kategori Produk --</option>
+							<option value="smartphone">Smartphone</option>
+							<option value="laptop">Laptop</option>
+							<option value="ipad">Ipad</option>
+							<option value="mouse">Mouse</option>
+							<option value="keyboard">Keyboard</option>
+							<option value="headset">Headset</option>
+						</select>
+					</td>
+				</tr>
+				<tr bgcolor="#3A3845">
+					<td>Harga</td>
+					<td>
+						<input type="text" name="harga" size="30" maxlength="30">
+					</td>
+				</tr>
+				<tr bgcolor="#3A3845">
+					<td>Stok</td>
+					<td>
+						<input type="text" name="stok" size="30" maxlength="30">
+					</td>
+				</tr>
+				<tr bgcolor="#3A3845">
+					<td>Photo</td>
+					<td>
+						<input type="file" name="photo">
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr bgcolor="#DAB88B">
+					<th colspan="2">
+						<input type="submit" name="proses" value="kirim">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="reset" name="unproses" value="batal">
+					</th>
+				</tr>
+			</tfoot>
+		</table>
+	</font>
+</form>
+
+<style>
+	form{
+		margin: 0;
+		padding: 0;
+		top: 27%;
+		left: 32%;
+		position: absolute;
+		align-content: center;
+	}
+	select{
+		width: 237px;
+	}
+</style>
+</body>
+</html>
